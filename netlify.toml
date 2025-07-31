@@ -1,7 +1,8 @@
 [build]
   command = "pnpm run build"
-  publish = "public"
+  publish = "public"  # or your actual static output folder if static deploy
 
-[dev]
-  command = "pnpm run dev"
-  port = 3000
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

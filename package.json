@@ -13,7 +13,7 @@
   "scripts": {
     "deploy": "npm run build && wrangler pages deploy",
     "build": "remix vite:build",
-    "dev": "node pre-start.cjs  && remix vite:dev",
+    "dev": "node pre-start.mjs && remix vite:dev",
     "test": "vitest --run",
     "test:watch": "vitest",
     "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint app",
@@ -198,12 +198,12 @@
     "typescript": "^5.7.2",
     "unified": "^11.0.5",
     "unocss": "^66.3.3",
-    "vite": "^5.4.11",
+    "vite": "^5.4.19",
     "vite-plugin-copy": "^0.1.6",
     "vite-plugin-optimize-css-modules": "^1.1.0",
     "vite-tsconfig-paths": "^4.3.2",
     "vitest": "^3.2.4",
-    "wrangler": "^4.5.1"
+    "wrangler": "^3.29.0"
   },
   "resolutions": {
     "@typescript-eslint/utils": "^8.0.0-alpha.30"

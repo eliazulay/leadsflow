@@ -1,8 +1,11 @@
 [build]
-  command = "pnpm run build"
-  publish = "public"  # or your actual static output folder if static deploy
+command = "npm run build"
+publish = "public"
+
+[functions]
+directory = "netlify/functions"
 
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+from = "/*"
+to = "/.netlify/functions/remix"
+status = 200
